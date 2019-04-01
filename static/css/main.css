@@ -1,0 +1,23 @@
+body {
+	background-color: #ffffff;
+}
+
+h1 {
+	font-size: 40px;
+	color: darkblue;
+}
+
+p {
+	font-family: 'Anton', sans-serif;
+	font-size: 20px;
+	padding-right: 10%;
+	padding-left: 10%;
+}
+
+textarea {
+	width = 100%;
+	text-align: center;
+	padding-left: 25%;
+	padding-right: 30%;
+	border-width: 5px;
+}

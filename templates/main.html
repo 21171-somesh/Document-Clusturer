@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Predictor</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+	<script src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
+	<script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/main.css') }}">
+</head>
+<body>
+	<center style="padding-left: 25%; padding-right: 25%;">
+		<div class="panel panel-info">
+			<div class="panel-heading">
+				<h1><u>Predictor</u></h1>
+				<br><br>
+				<p>
+					Put up a text in the text box given below and it will classify the given text into some predifined classes
+				</p>
+			</div>
+		</div>
+			<form action="{{ url_for('about_post') }}" id="mainForm" name = "formMain" method = "POST">
+				<textarea rows="8" cols="50" name="title" form="mainForm" placeholder="Enter text here..."></textarea>
+				<br>
+				<input type="submit" class="btn btn-primary" name="submit" placeholder="Submit">
+			</form>
+	</center>
+</body>
